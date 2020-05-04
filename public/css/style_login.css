@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #404040, #ebebeb);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 560px;
+    padding:25px 60px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+input[type=name], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+}
+
+.loginbtn{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #141714;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 20px;
+    min-width: 150px;
+    height: 55px;
+}
+
+.loginbtn:hover{
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes background-color {
+    100% {
+        background-color: #57b846;
+        transform: scale(1.015);
+    }
+}
+
+a {
+    align-self: flex-start;
+    margin-top: 10px;
+}

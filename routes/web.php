@@ -17,6 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/1', function () {
+Route::get('/1',['as' => 'log_in', function () {
     return view('log_in');
-});
+}] );
+
+Auth::routes([
+    'reset' => false,
+    'reset' => false,
+    'reset' => false,
+]);
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
